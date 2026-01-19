@@ -1,6 +1,6 @@
 # Tidio MCP Connector
 
-An MCP (Model Context Protocol) server that connects AI assistants to [Tidio](https://www.tidio.com) live chat - with **automatic setup** via OAuth, just like the WordPress plugin.
+An MCP (Model Context Protocol) server that connects AI assistants to [Tidio](https://www.tidio.com) live chat - with **automatic setup**
 
 ## Features
 
