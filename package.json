@@ -1,7 +1,7 @@
 {
   "name": "tidio-mcp-connector",
   "version": "1.0.0",
-  "description": "MCP server for Tidio live chat integration - generate embed code for websites",
+  "description": "Connect AI assistants to Tidio with one command and offer instant chatbot & live chat support",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "tidio",
@@ -18,10 +19,21 @@
     "model-context-protocol",
     "live-chat",
     "chat-widget",
+    "chatbot",
+    "claude",
+    "ai",
     "lovable"
   ],
-  "author": "",
+  "author": "Tidio <support@tidio.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TidioPoland/tidio-mcp-connector.git"
+  },
+  "homepage": "https://github.com/TidioPoland/tidio-mcp-connector#readme",
+  "bugs": {
+    "url": "https://github.com/TidioPoland/tidio-mcp-connector/issues"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "open": "^10.0.0"
@@ -33,5 +45,9 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
